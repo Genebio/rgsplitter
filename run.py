@@ -191,5 +191,9 @@ if __name__ == '__main__':
     args = parse_args()
     logger.info(f"Starting program with the folowing arguments: {args}")
 
-    run(**args)
-    logger.info("Run is completed successfully.")
+    try:
+        run(**args)
+        logger.info("Run completed successfully.")
+    except Exception as e:
+        logger.error(f"An error occurred: {e}")
+        sys.exit(1)
