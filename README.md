@@ -64,3 +64,24 @@ docker run --rm -it \
     --readgroups-txt /mnt/RNASeq-tumor-readgroups.txt
 ```
 ### logs:
+/usr/local/src/run.py | line 189 | INFO     | TEMPDIR = '/tmp', OUTPREFIX = '/root'
+/usr/local/src/run.py | line 192 | INFO     | Starting program with the folowing arguments: {'fastq1': '/mnt/RNASeq-tumor_1k_1.fastq.gz', 'fastq2': '/mnt/RNASeq-tumor_1k_2.fastq.gz', 'output_basename': '/mnt/RNASeq-tumor', 'readgroups_txt': '/mnt/RNASeq-tumor-readgroups.txt', 'ignore_warnings': False}
+/usr/local/src/run.py | line 165 | INFO     | '/mnt/RNASeq-tumor-readgroups.txt' file content: ['A01231:742:HHMCWDRX3:1', 'A01231:742:HHMCWDRX3:2']
+/usr/local/src/run.py | line 124 | INFO     | Splitting /mnt/RNASeq-tumor_1k_1.fastq.gz by 'A01231:742:HHMCWDRX3:1'...
+/usr/local/src/run.py | line 56  | INFO     | Running the following subprocess command: 'seqkit grep -rp ^A01231:742:HHMCWDRX3:1 -j 8 -o /mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:1_1.fastq.gz /mnt/RNASeq-tumor_1k_1.fastq.gz'
+/usr/local/src/run.py | line 127 | INFO     | Successfully splitted '/mnt/RNASeq-tumor_1k_1.fastq.gz' by 'A01231:742:HHMCWDRX3:1' to '/mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:1_1.fastq.gz'
+/usr/local/src/run.py | line 124 | INFO     | Splitting /mnt/RNASeq-tumor_1k_2.fastq.gz by 'A01231:742:HHMCWDRX3:1'...
+/usr/local/src/run.py | line 56  | INFO     | Running the following subprocess command: 'seqkit grep -rp ^A01231:742:HHMCWDRX3:1 -j 8 -o /mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:1_2.fastq.gz /mnt/RNASeq-tumor_1k_2.fastq.gz'
+/usr/local/src/run.py | line 127 | INFO     | Successfully splitted '/mnt/RNASeq-tumor_1k_2.fastq.gz' by 'A01231:742:HHMCWDRX3:1' to '/mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:1_2.fastq.gz'
+/usr/local/src/run.py | line 124 | INFO     | Splitting /mnt/RNASeq-tumor_1k_1.fastq.gz by 'A01231:742:HHMCWDRX3:2'...
+/usr/local/src/run.py | line 56  | INFO     | Running the following subprocess command: 'seqkit grep -rp ^A01231:742:HHMCWDRX3:2 -j 8 -o /mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:2_1.fastq.gz /mnt/RNASeq-tumor_1k_1.fastq.gz'
+/usr/local/src/run.py | line 127 | INFO     | Successfully splitted '/mnt/RNASeq-tumor_1k_1.fastq.gz' by 'A01231:742:HHMCWDRX3:2' to '/mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:2_1.fastq.gz'
+/usr/local/src/run.py | line 124 | INFO     | Splitting /mnt/RNASeq-tumor_1k_2.fastq.gz by 'A01231:742:HHMCWDRX3:2'...
+/usr/local/src/run.py | line 56  | INFO     | Running the following subprocess command: 'seqkit grep -rp ^A01231:742:HHMCWDRX3:2 -j 8 -o /mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:2_2.fastq.gz /mnt/RNASeq-tumor_1k_2.fastq.gz'
+/usr/local/src/run.py | line 127 | INFO     | Successfully splitted '/mnt/RNASeq-tumor_1k_2.fastq.gz' by 'A01231:742:HHMCWDRX3:2' to '/mnt/RNASeq-tumor-A01231:742:HHMCWDRX3:2_2.fastq.gz'
+/usr/local/src/run.py | line 81  | INFO     | Checking if '/mnt/RNASeq-tumor_1k_1.fastq.gz' is consistent...
+/usr/local/src/run.py | line 93  | INFO     | Consistency check passed for '/mnt/RNASeq-tumor_1k_1.fastq.gz'
+/usr/local/src/run.py | line 81  | INFO     | Checking if '/mnt/RNASeq-tumor_1k_2.fastq.gz' is consistent...
+/usr/local/src/run.py | line 93  | INFO     | Consistency check passed for '/mnt/RNASeq-tumor_1k_2.fastq.gz'
+/usr/local/src/run.py | line 175 | INFO     | Consistency check passed for all input fastq files.
+/usr/local/src/run.py | line 196 | INFO     | Run completed successfully.
